@@ -1,0 +1,6 @@
+// Only change code below this line
+var myName;
+var myStr;
+
+myName = "John Doe";
+myStr = "My name is " + myName + " and I am well!";
