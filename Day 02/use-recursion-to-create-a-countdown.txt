@@ -1,0 +1,15 @@
+// Only change code below this line
+function countdown(n) {
+  /*
+  countdown(0) = []
+  countdown(1) = [1]
+  countdown(2) = countdown(1)
+  */
+  if (n < 1) return []
+  var countArray = [n]
+  var recursed = countdown(n-1)
+  countArray = countArray.concat(recursed)
+  return countArray;
+}
+// Only change code above this line
+console.log({ans: countdown(3)})
