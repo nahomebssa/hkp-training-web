@@ -1,0 +1,9 @@
+function Bird() {
+  let weight = 15;
+
+  this.getWeight = () => weight
+
+}
+
+const b = new Bird()
+console.log(b.getWeight())
