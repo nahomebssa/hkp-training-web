@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/hkp-training-web/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/hkp-training-web/static/js/main.d8a5ef24.chunk.js",
-    "main.js.map": "/hkp-training-web/static/js/main.d8a5ef24.chunk.js.map",
+    "main.js": "/hkp-training-web/static/js/main.ad2e235a.chunk.js",
+    "main.js.map": "/hkp-training-web/static/js/main.ad2e235a.chunk.js.map",
     "runtime-main.js": "/hkp-training-web/static/js/runtime-main.4c6e5605.js",
     "runtime-main.js.map": "/hkp-training-web/static/js/runtime-main.4c6e5605.js.map",
     "static/js/2.fdea560a.chunk.js": "/hkp-training-web/static/js/2.fdea560a.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.4c6e5605.js",
     "static/js/2.fdea560a.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.d8a5ef24.chunk.js"
+    "static/js/main.ad2e235a.chunk.js"
   ]
 }
