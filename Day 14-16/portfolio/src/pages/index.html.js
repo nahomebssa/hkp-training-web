@@ -1,6 +1,6 @@
-import NavBar from "../inc/NavBar";
+import NavBar from "../components/inc/NavBar";
 import { Link } from 'react-router-dom'
-import PageHeader from "../inc/PageHeader";
+import PageHeader from "../components/inc/PageHeader";
 
 // function Main({ container, ...rest}) {
 //     const className = container ? {className: "container"} : null
@@ -25,7 +25,7 @@ function Section({ id, title, children, container = true }) {
 
 export default function IndexPage() {
     return (
-        <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" tabindex="0">
+        <div className="body" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0">
             <div className="wrapper">
                 <NavBar />
                 <PageHeader title="Welcome." subtitle="Hi! My name is Nahom Ebssa, and I am a computer science student at George Mason University." />
@@ -75,6 +75,6 @@ export default function IndexPage() {
                 </footer> */}
 
             </div>
-        </body>
+        </div>
     )
 }

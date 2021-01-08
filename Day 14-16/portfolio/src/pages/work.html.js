@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
-import NavBar from "../inc/NavBar";
-import PageHeader from "../inc/PageHeader";
+// import { Link } from "react-router-dom";
+import NavBar from "../components/inc/NavBar";
+import PageHeader from "../components/inc/PageHeader";
 
 export default function WorkPage() {
     return (
