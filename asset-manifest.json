@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/hkp-training-web/static/js/main.0605b478.chunk.js",
-    "main.js.map": "/hkp-training-web/static/js/main.0605b478.chunk.js.map",
+    "main.js": "/hkp-training-web/static/js/main.27d12d29.chunk.js",
+    "main.js.map": "/hkp-training-web/static/js/main.27d12d29.chunk.js.map",
     "runtime-main.js": "/hkp-training-web/static/js/runtime-main.109f043a.js",
     "runtime-main.js.map": "/hkp-training-web/static/js/runtime-main.109f043a.js.map",
-    "static/js/2.2209daf9.chunk.js": "/hkp-training-web/static/js/2.2209daf9.chunk.js",
-    "static/js/2.2209daf9.chunk.js.map": "/hkp-training-web/static/js/2.2209daf9.chunk.js.map",
+    "static/js/2.8b526bf3.chunk.js": "/hkp-training-web/static/js/2.8b526bf3.chunk.js",
+    "static/js/2.8b526bf3.chunk.js.map": "/hkp-training-web/static/js/2.8b526bf3.chunk.js.map",
     "index.html": "/hkp-training-web/index.html",
-    "static/js/2.2209daf9.chunk.js.LICENSE.txt": "/hkp-training-web/static/js/2.2209daf9.chunk.js.LICENSE.txt"
+    "static/js/2.8b526bf3.chunk.js.LICENSE.txt": "/hkp-training-web/static/js/2.8b526bf3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.109f043a.js",
-    "static/js/2.2209daf9.chunk.js",
-    "static/js/main.0605b478.chunk.js"
+    "static/js/2.8b526bf3.chunk.js",
+    "static/js/main.27d12d29.chunk.js"
   ]
 }
