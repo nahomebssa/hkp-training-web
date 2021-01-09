@@ -1,22 +1,17 @@
 {
   "files": {
-    "main.css": "/hkp-training-web/static/css/main.ce6edf29.chunk.css",
-    "main.js": "/hkp-training-web/static/js/main.03c803c1.chunk.js",
-    "main.js.map": "/hkp-training-web/static/js/main.03c803c1.chunk.js.map",
-    "runtime-main.js": "/hkp-training-web/static/js/runtime-main.d7aa366b.js",
-    "runtime-main.js.map": "/hkp-training-web/static/js/runtime-main.d7aa366b.js.map",
-    "static/js/2.b1ca4461.chunk.js": "/hkp-training-web/static/js/2.b1ca4461.chunk.js",
-    "static/js/2.b1ca4461.chunk.js.map": "/hkp-training-web/static/js/2.b1ca4461.chunk.js.map",
-    "static/js/3.3d5e605d.chunk.js": "/hkp-training-web/static/js/3.3d5e605d.chunk.js",
-    "static/js/3.3d5e605d.chunk.js.map": "/hkp-training-web/static/js/3.3d5e605d.chunk.js.map",
+    "main.js": "/hkp-training-web/static/js/main.0605b478.chunk.js",
+    "main.js.map": "/hkp-training-web/static/js/main.0605b478.chunk.js.map",
+    "runtime-main.js": "/hkp-training-web/static/js/runtime-main.109f043a.js",
+    "runtime-main.js.map": "/hkp-training-web/static/js/runtime-main.109f043a.js.map",
+    "static/js/2.2209daf9.chunk.js": "/hkp-training-web/static/js/2.2209daf9.chunk.js",
+    "static/js/2.2209daf9.chunk.js.map": "/hkp-training-web/static/js/2.2209daf9.chunk.js.map",
     "index.html": "/hkp-training-web/index.html",
-    "static/css/main.ce6edf29.chunk.css.map": "/hkp-training-web/static/css/main.ce6edf29.chunk.css.map",
-    "static/js/2.b1ca4461.chunk.js.LICENSE.txt": "/hkp-training-web/static/js/2.b1ca4461.chunk.js.LICENSE.txt"
+    "static/js/2.2209daf9.chunk.js.LICENSE.txt": "/hkp-training-web/static/js/2.2209daf9.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.d7aa366b.js",
-    "static/js/2.b1ca4461.chunk.js",
-    "static/css/main.ce6edf29.chunk.css",
-    "static/js/main.03c803c1.chunk.js"
+    "static/js/runtime-main.109f043a.js",
+    "static/js/2.2209daf9.chunk.js",
+    "static/js/main.0605b478.chunk.js"
   ]
 }
