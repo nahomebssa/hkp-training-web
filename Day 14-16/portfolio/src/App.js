@@ -1,31 +1,34 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import IndexPage from './pages/index.html'
+import AboutPage from './pages/about.html'
 import WorkPage from './pages/work.html'
+import ContactPage from './pages/contact.html'
 
-import NavBar from "./components/inc/NavBar";
-import Main from "./components/inc/Main";
-import Footer from "./components/inc/Footer";
+import { NavBar } from "./components/inc/NavBar";
+import { Main } from "./components/inc/Main";
+import { Footer } from "./components/inc/Footer";
 
-import { ThemeProvider } from './ThemeContext'
+import { ThemeProvider } from './components/ThemeContext'
+import { ScrollProvider } from './components/ScrollContext'
 
 function AppLayout({ children }) {
     return (
-        <ThemeProvider>
-            <div className="wrapper p-navbar">
-                <NavBar />
-                <Main>
-                    {children}
-                </Main>
-                <Footer className="d-none" />
-            </div>
-        </ThemeProvider>
+        <ScrollProvider>
+            <ThemeProvider>
+                    <NavBar />
+                    <Main>
+                        {children}
+                    </Main>
+                    {false && <Footer />}
+            </ThemeProvider>
+        </ScrollProvider>
     )
 }
 
 export default function App() {
     // const ErrorPage = () => <code>ERROR 404 NOT FOUND</code>
     const AreYouLostPage = () => (
-        <div className="container d-flex justify-content-center m-5 p-5 shadow">
+        <div className="container d-flex justify-content-center m-5 p-5 shadow-sm">
             <div>
                 <h1>Are you lost?</h1>
                 <p>Try one of these pages:</p>
@@ -50,7 +53,9 @@ export default function App() {
         <BrowserRouter basename="hkp-training-web">
             <AppLayout>
                 <Switch>
+                    <Route path="/about" component={AboutPage} />
                     <Route path="/work" component={WorkPage} />
+                    <Route path="/contact" component={ContactPage} />
                     <Route exact path="/" component={IndexPage} />
                     <Route component={AreYouLostPage} />
                 </Switch>

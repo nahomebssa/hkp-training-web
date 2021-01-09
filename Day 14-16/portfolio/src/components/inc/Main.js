@@ -1,4 +1,4 @@
-export default function Main({...rest}) {
+export function Main({...rest}) {
     return (
         <main {...rest} />
     )

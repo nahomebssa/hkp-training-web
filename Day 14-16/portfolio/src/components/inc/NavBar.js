@@ -1,27 +1,34 @@
 import { Link } from "react-router-dom";
-import { useTheme } from "../../ThemeContext";
+import { useTheme } from "../ThemeContext";
+import { ThemeText } from "../ThemeText";
 
-export default function NavBar() {
-    const { themeColor, not } = useTheme()
-    const themeBackground = `bg-${themeColor}`
-    const themeText = `text-${not(themeColor)}`
+const ThemeLink = ({...rest}) => <ThemeLink as={Link} {...rest} />
+
+export function NavBar() {
+    const { dark } = useTheme()
+    const themeColor = dark ? 'dark' : 'light'
+    const themeBackground = dark ? 'bg-dark' : 'bg-light'
 
     return (
-        <nav id="navbar" className={`navbar navbar-${themeColor} ${themeBackground} px-3 fixed-top`}>
+        <nav id="navbar" className={`navbar navbar-${themeColor} ${themeBackground} fixed-top`}>
             <div className="container">
-                <Link className="navbar-brand" to="/">Nahom Ebssa</Link>
+                <ThemeText as={Link} className="navbar-brand" to="/">Nahom Ebssa</ThemeText>
                 <ul className="nav nav-pills">
                     <li className="nav-item">
-                        <Link className={`nav-link ${themeText}`} to="/about">About</Link>
+                        <ThemeText as={Link} className="nav-link" to="/about">About</ThemeText>
                     </li>
                     <li className="nav-item">
-                        <Link className={`nav-link ${themeText}`} to="/work">Work</Link>
+                        <ThemeText as={Link} className="nav-link" to="/work">Work</ThemeText>
                     </li>
                     <li className="nav-item">
-                        <Link className={`nav-link ${themeText}`} to="/contact">Contact</Link>
+                        <ThemeText as={Link} className="nav-link" to="/contact">Contact</ThemeText>
                     </li>
                 </ul>
             </div>
         </nav>
     )
+}
+
+export function NavBarRoof({...rest}) {
+    return <div style={{paddingTop: '56px'}} {...rest} />
 }
