@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import { useTheme } from "../ThemeContext";
-import { ThemeText } from "../ThemeText";
+import { useTheme } from "../theme/ThemeContext";
+import { ThemeText } from "../theme/ThemeText";
 
 const ThemeLink = ({...rest}) => <ThemeLink as={Link} {...rest} />
 

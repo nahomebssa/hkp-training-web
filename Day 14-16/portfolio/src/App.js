@@ -1,3 +1,4 @@
+import {Fragment as ReactFragment} from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import IndexPage from './pages/index.html'
 import AboutPage from './pages/about.html'
@@ -8,18 +9,22 @@ import { NavBar } from "./components/inc/NavBar";
 import { Main } from "./components/inc/Main";
 import { Footer } from "./components/inc/Footer";
 
-import { ThemeProvider } from './components/ThemeContext'
+import { ThemeProvider } from './components/theme/ThemeContext'
 import { ScrollProvider } from './components/ScrollContext'
+import { ThemeContainer } from './components/theme/ThemeContainer'
 
 function AppLayout({ children }) {
+    const Wrapper = !true ? ThemeContainer : ReactFragment
     return (
         <ScrollProvider>
             <ThemeProvider>
+                <Wrapper>
                     <NavBar />
                     <Main>
                         {children}
                     </Main>
                     {false && <Footer />}
+                </Wrapper>
             </ThemeProvider>
         </ScrollProvider>
     )

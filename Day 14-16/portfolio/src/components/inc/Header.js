@@ -1,7 +1,7 @@
 import React from 'react'
-import { useTheme } from "../ThemeContext"
+import { useTheme } from "../theme/ThemeContext"
 import { section, div, h1, p } from '../html'
-import { ThemeText } from "../ThemeText"
+import { ThemeText } from "../theme/ThemeText"
 
 const classNames = (...arr) => arr.join(' ').trim()
 
