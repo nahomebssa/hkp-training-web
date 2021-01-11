@@ -18,7 +18,7 @@ export const ThemeProvider = ({ ...rest }) => {
     const not = theme => theme === Theme.dark ? Theme.light : theme === Theme.light ? Theme.dark : theme
     
     return (
-        <ThemeContext.Provider {...rest} value={{ Theme, themeColor, not, dark: themeColor === Theme.dark, light: themeColor === Theme.light }} />
+        <ThemeContext.Provider {...rest} value={{ Theme, setThemeColor, not, dark: themeColor === Theme.dark, isDark: () => themeColor === Theme.dark, light: themeColor === Theme.light }} />
     )
 }
 export const useTheme = () => useContext(ThemeContext)

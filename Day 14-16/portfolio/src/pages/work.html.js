@@ -3,15 +3,11 @@ import { Header } from "../components/inc/Header";
 import { Section } from "../components/inc/Section";
 import { useEffect } from "react";
 import { useState } from "react";
-import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { p } from "../components/html";
 import { ThemeText } from "../components/theme/ThemeText";
 import { Card } from 'react-bootstrap'
 import { useTheme } from "../components/theme/ThemeContext";
 import { ThemeContainer } from "../components/theme/ThemeContainer";
-
-const Flex = ({ column, ...rest }) => <div className={["d-flex flex-wrap", column ? "flex-column" : ""].join(" ").trim()} {...rest} />
 
 function fetchPens() {
     return ([
@@ -54,7 +50,7 @@ const MCard = ({ href, headerIcon: icon, header, title, description, children })
 }
 function Works() {
     const [works, setWorks] = useState([])
-    const addToWorks = (w) => { setWorks(works.concat(w)) }
+    // const addToWorks = (w) => { setWorks(works.concat(w)) }
 
     useEffect(() => {
         fetch('https://api.github.com/users/nahomebssa/repos').catch((e) => {
@@ -116,7 +112,7 @@ function Works() {
 const Codepen = {
     Pen({ slug, title, height, theme }) {
         return (
-            <iframe height={height || "265"} style={{ width: '100%' }} scrolling="no" title={title} src={`https://codepen.io/enahom99/embed/${slug}?height=${height || "265"}&theme-id=${theme}&default-tab=result`} frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            <iframe height={height || "265"} style={{ width: '100%' }} scrolling="no" title={title} src={`https://codepen.io/enahom99/embed/${slug}?height=${height || "265"}&theme-id=${theme}&default-tab=result&zoom=0.5`} frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
                 See the Pen <a href={`https://codepen.io/enahom99/pen/${slug}`}>{title}</a> by Nahom Ebssa
                 (<a href='https://codepen.io/enahom99'>@enahom99</a>) on <a href='https://codepen.io'>CodePen</a>.
             </iframe>

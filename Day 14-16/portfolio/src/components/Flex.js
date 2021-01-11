@@ -1,0 +1,1 @@
+export const Flex = ({ column, ...rest }) => <div className={["d-flex flex-wrap", column ? "flex-column" : ""].join(" ").trim()} {...rest} />
